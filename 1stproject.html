@@ -86,7 +86,7 @@
                 <div class="row justify-content-around">
                     <div class="col-lg-4">
                         <h6>Search Streamer</h6>
-                        <input id=title><button class="btn btn-primary">go</button>
+                        <input id="streamer"><button id="streamerGo" class="btn btn-primary">go</button>
                     </div>
                     <div class="col-lg-4">
                         <h6>Search Game</h6>
@@ -99,7 +99,7 @@
                                 <option value="switch">Switch</option>
                             </select>
                         </form>
-                        <input id=title><button id="gameGo" class="btn btn-primary">go</button>
+                        <input id="game"><button id="gameGo" class="btn btn-primary">go</button>
                     </div>
                 </div>
         
@@ -110,7 +110,7 @@
         <!-- carousel looping through trending -->
         <!--Carousel Wrapper-->
         <div class="container">
-            <div id="video-carousel-example" class="carousel slide carousel-fade" data-ride="carousel">
+            <div id="video-carousel-example" class="carousel slide carousel-fade" data-interval="false">
                 <!--Indicators-->
                 <ol class="carousel-indicators">
                     <li data-target="#video-carousel-example" data-slide-to="0" class="active"></li>
@@ -120,10 +120,8 @@
                 <!--/.Indicators-->
                 <!--Slides-->
                 <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active text-center">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/rXRQyd6_5j4" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
+                    <div id="vid1" class="carousel-item active text-center">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/0E44DClsX5Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <div class="carousel-item">
                         <video class="video-fluid" autoplay loop muted>
@@ -150,7 +148,7 @@
             </div>
             <!--Carousel Wrapper-->
         
-        
+            
             <!-- cards with trending -->
         
             <div class="card-deck">
