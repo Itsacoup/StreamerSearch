@@ -225,6 +225,8 @@ $(document).ready(function () {
         $("#results").removeClass("collapse")
         $("#results").addClass("d-flex")
         $("#results").addClass("justify-content-center")
+        $("#gameRow").removeClass("justify-content-between")
+        $("#gameRow").addClass("justify-content-center")
         var user = $("#streamer").val();
         $("#streamer").val("");
         var ytKey = "AIzaSyBuRxDo7OxheAUCt0Kj5T14U2gug7CQ6YM";
